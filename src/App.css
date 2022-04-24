@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.microservice-parent-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.microservice-parent-container > div {
+  background-color: rgba(186, 164, 164, 0.062);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div {
+  background-color: rgba(186, 164, 164, 0.062);
+}
+.microservice-parent-container > h1 {
+  border: 2px solid;
+  font-family: 'Montserrat';
+  color: rgb(43, 49, 167);
+}
+.fetcher {
+  font-family: 'Roboto Mono';
+  border: 2px solid;
+  color: rgb(26, 35, 202);
+}
+.fetcher:hover {
+  background-color: rgb(255, 255, 255);
+}
+.microservice-parent-container > table, thead, td {
+  border: 2px solid;
+  width: 12px;
+  width: 40%;
+  font-family: 'Roboto Mono';
+  color: rgb(26, 35, 202);
+}
+.message {
+  border: 2px solid;
+  color: rgb(26, 35, 202);
+  font-family: 'Montserrat';
 }
